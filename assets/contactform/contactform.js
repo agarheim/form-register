@@ -110,6 +110,7 @@ jQuery(document).ready(function($) {
           $("#sendmessage").removeClass("show");
           $("#errormessage").addClass("show text-error");
           $('#errormessage').html(msg);
+			$('#formsubmit')[0].reset();
 		  $('#ex1').modal();
         }
 
@@ -119,3 +120,7 @@ jQuery(document).ready(function($) {
   });
 
 });
+
+function resf() {document.getElementById('formsubmit').reset();
+	
+}
